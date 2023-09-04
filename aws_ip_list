@@ -1,0 +1,1 @@
+curl -s -X GET https://ip-ranges.amazonaws.com/ip-ranges.json | jq -r ".prefixes | .[] | select(.service == \"CODEBUILD\") | .ip_prefix"
