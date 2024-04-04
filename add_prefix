@@ -1,0 +1,2 @@
+prefix=
+ls | awk '{print $1 " "prefix $1 }' prefix=$prefix"_" | xargs -n 2 mv
